@@ -15,9 +15,9 @@ class TelaHome:
         #Limite de 500 Char
         saida = tradutor.translate(str(getTexto))
 
-        with open("arquivo_Traduzido.txt", "a") as arquivo:
-            arquivo.write(f"Tradução:{saida}.")
-        print(f"Traducao: {saida}")
+      
+        textTranslate = ctk.CTkLabel(self.master, text=f"Traducao: {saida}")
+        textTranslate.pack(padx=10, pady=10)
 
 
     def __init__ (self, master):
@@ -49,6 +49,5 @@ if __name__ == "__main__":
 
 
    
-
 
 
